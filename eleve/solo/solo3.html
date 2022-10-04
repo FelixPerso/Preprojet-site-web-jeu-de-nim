@@ -1,45 +1,61 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Jeu de Nim</title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  	<meta charset="utf-8">
+  	<title>Jeu de Nim</title>
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+	</style>
 </head>
 <body style="background-color:#d0c4f4;">
 	
-    <div class="w3-center">
-        <img src="../../img/ordi.png" alt="Ordinateur" class="w3-margin-bottom" width="200"><br>
-        <p class="w3-large">Ordinateur</p>
-    </div>
-	<button type="button" class="w3-col w3-container l2 w3-display-topright" style="width:10%;"onclick="window.location.href='../..accessibilite.html'"><img src="../../img/logo_accessibilite.png" alt="Mode daltonien" width="80" height="80"></button><br> 
-	
-	<nav class="w3-col w3-container l4 w3-display-left">
-		<button type="button" class="w3-margin w3-xxxlarge" style="width:40%" onclick="window.location.href='../../accueil/accueil_eleve.html'"><i class="fa fa-home"></i></button><br>
-		<button type="button" class="w3-margin w3-xlarge" style="width:40%">Tutoriel</button><br>
-		<button type="button" class="w3-margin w3-xlarge" style="width:40%" onclick="window.location.href='solo.html'">Solo</button><br>
-		<button type="button" class="w3-margin w3-xlarge w3-disabled" style="width:40%">Avec robot</button><br> 
-		<button type="button" class="w3-margin w3-xlarge w3-disabled" style="width:40%">Plusieurs robots</button><br>
-		<button type="button" class="w3-margin w3-xlarge w3-disabled" style="width:40%">Robot intelligent</button><br>
-		<button type="button" class="w3-margin w3-xlarge w3-disabled" style="width:40%">Voir mes robots</button><br>
-		<br>
+	<button type="button" class="l2 w3-display-topright w3-small w3-hide-small" style="width:10%;"onclick="window.location.href='../../accessibilite.html'"><img src="../../img/logo_accessibilite.png" alt="Mode daltonien" width="80" height="80"></button> 
+	<button type="button" class="l2 w3-display-bottomright w3-hide-large w3-hide-medium" style="width:10%;"onclick="window.location.href='../../accessibilite.html'"><img src="../../img/logo_accessibilite.png" alt="Mode daltonien" width="40" height="40"></button> 
+
+	<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-black">
+		<a class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home w3-xxxlarge"></i></a>
+		<a class="w3-bar-item w3-button w3-padding-large"><p class="w3-xlarge">Tutoriel</p></a>
+		<a class="w3-bar-item w3-button w3-padding-large"><p class="w3-xlarge">Solo</p></a>
+		<a class="w3-bar-item w3-button w3-padding-large w3-disabled"><p class="w3-xlarge">Avec robot</p></a>
+		<a class="w3-bar-item w3-button w3-padding-large w3-disabled"><p class="w3-xlarge">Plusieurs robots</p></a>
+		<a class="w3-bar-item w3-button w3-padding-large w3-disabled"><p class="w3-xlarge">Robot intelligent</p></a>
+		<a class="w3-bar-item w3-button w3-padding-large w3-disabled"><p class="w3-xlarge">Voir mes robots</p></a>
 	</nav>
+
+	<div class="w3-top w3-hide-large w3-hide-medium">
+		<div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+			<a class="w3-bar-item w3-button" style="width:25% !important"><i class="fa fa-home w3-xxxlarge"></i></a>
+			<a class="w3-bar-item w3-button" style="width:25% !important"><p>Tutoriel</p></a>
+			<a class="w3-bar-item w3-button" style="width:25% !important"><p>Solo</p></a>
+			<a class="w3-bar-item w3-button w3-disabled" style="width:25% !important"><p>Avec robot</p></a>
+			<a class="w3-bar-item w3-button w3-disabled" style="width:25% !important"><p>Plusieurs robots</p></a>
+			<a class="w3-bar-item w3-button w3-disabled" style="width:25% !important"><p>Robot intelligent</p></a>
+			<a class="w3-bar-item w3-button w3-disabled" style="width:25% !important"><p>Voir mes robots</p></a>
+		</div>
+	</div>
+	<div class="w3-hide-large w3-container w3-padding-64"></div>
 	
-	<div class="w3-col w3-container l6 w3-display-middle">
-        <div class="w3-row">
-		    <img src="../../img/apple.png" alt="Pomme" class="w3-col w3-opacity-max" style="width:14%;">
-            <img src="../../img/apple.png" alt="Pomme" class="w3-col w3-opacity-max" style="width:14%;">
-            <img src="../../img/apple.png" alt="Pomme" class="w3-col w3-opacity-max" style="width:14%;">
-            <img src="../../img/apple.png" alt="Pomme" class="w3-col w3-opacity-max" style="width:14%;">
-            <img src="../../img/apple.png" alt="Pomme" class="w3-col w3-opacity-max" style="width:14%;">
-            <img src="../../img/apple.png" alt="Pomme" class="w3-col w3-opacity-max" style="width:14%;">
-            <img src="../../img/apple.png" alt="Pomme" class="w3-col" style="width:14%;"><br>
+    <div class="w3-col w3-container l7 w3-display-middle">
+        <div class="w3-row w3-center">
+            <img src="../../img/ordi.png" alt="Ordinateur" class="w3-margin-bottom" width="20%"><br>
+            <p class="w3-large">Ordinateur</p>
+        </div>
+        <div class="w3-row w3-center">
+		    <img src="../../img/apple.png" alt="Pomme" class="" style="width:10%;">
+            <img src="../../img/apple.png" alt="Pomme" class="w3-opacity-max" style="width:10%;">
+            <img src="../../img/apple.png" alt="Pomme" class="w3-opacity-max" style="width:10%;">
+            <img src="../../img/apple.png" alt="Pomme" class="w3-opacity-max" style="width:10%;">
+            <img src="../../img/apple.png" alt="Pomme" class="w3-opacity-max" style="width:10%;">
+            <img src="../../img/apple.png" alt="Pomme" class="w3-opacity-max" style="width:10%;">
+            <img src="../../img/apple.png" alt="Pomme" class="w3-opacity-max" style="width:10%;">
         </div>
         <div class="w3-panel"></div>
-        <div class="w3-row-padding">
-            <button type="button" class="w3-margin w3-large w3-col l3" style="width:29%;" onclick="window.location.href='solo4.html'">1</button>
-            <button type="button" class="w3-margin w3-large w3-col l3 w3-disabled" style="width:29%;">2</button>
-            <button type="button" class="w3-margin w3-large w3-col l3 w3-disabled" style="width:29%;" onclick="window.location.href='solo2.html'">3</button>
+        <div class="w3-row-padding w3-center">
+            <button type="button" class="w3-margin w3-large" style="width:10%;" onclick="window.location.href='solo4.html'">1</button>
+            <button type="button" class="w3-margin w3-large w3-disabled" style="width:10%;">2</button>
+            <button type="button" class="w3-margin w3-large w3-disabled" style="width:10%;" onclick="window.location.href='solo2.html'">3</button>
         </div>
 	</div>
 	
