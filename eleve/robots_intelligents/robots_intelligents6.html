@@ -6,19 +6,26 @@
   	<title>Jeu de Nim</title>
   	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bungee+Spice&family=Fredoka+One&display=swap"rel="stylesheet">
 	<style>
-		@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-		body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-		.w3-row-padding img {margin-bottom: 12px}
-		/* Set the width of the sidebar to 200px */
-		.w3-sidebar {width: 200px;background: #222;}
-		/* Add a left margin to the "page content" that matches the width of the sidebar (200px) */
-		#main {margin-left: 200px}
-		/* Remove margins from "page content" on small screens */
-	</style>
+        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+        .w3-row-padding img {margin-bottom: 12px}
+        /* Set the width of the sidebar to 200px */
+        .w3-sidebar {width: 200px;background: #222;}
+        /* Add a left margin to the "page content" that matches the width of the sidebar (200px) */
+        #main {margin-left: 200px}
+        /* Remove margins from "page content" on small screens */
+    </style>
 </head>
 <body style="background-color:#d0c4f4;">
-	
+
+	<div class="w3-display-topmiddle w3-container w3-center">
+		<h2 style="font-family:'Bangers', cursive;font-size: 5rem; font-weight: extra bold;color:#0625a0">Jeu de Nim
+		</h2>
+	</div>
 	<div class="w3-right w3-hide-small">
 		<button type="button" class="w3-col l6 m6" onclick="window.location.href='../../accessibilite.html'"><img src="../../img/logo_accessibilite.png" alt="Mode daltonien" width="80" height="80"></button>
 		<button type="button" class="w3-col l6 m6 w3-xlarge" onclick="window.location.href='../../index.html'">Réinitialiser le jeu</button>
@@ -30,24 +37,24 @@
 	</div>
 
 	<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-black">
-		<a class="w3-bar-item w3-button w3-padding-large" href="../../accueil/accueil_prof1.html"><i class="fa fa-home w3-xxxlarge"></i></a>
-		<a class="w3-bar-item w3-button w3-padding-large" href="../../tutoriel/tutoriel.html"><p class="w3-xlarge">Tutoriel</p></a>
-		<a class="w3-bar-item w3-button w3-padding-large" href="../solo/solo.html"><p class="w3-xlarge">Solo</p></a>
-		<a class="w3-bar-item w3-button w3-padding-large" href="../un_robot/un_robot.html"><p class="w3-xlarge">Avec robot</p></a>
-		<a class="w3-bar-item w3-button w3-padding-large" href="../plusieurs_robots/plusieurs_robots.html"><p class="w3-xlarge">Plusieurs robots</p></a>
-		<a class="w3-bar-item w3-button w3-padding-large" href="robots_intelligents.html"><p class="w3-xlarge">Robots intelligents</p></a>
-		<a class="w3-bar-item w3-button w3-padding-large" href="../voir_mes_robots/mes_robots.html"><p class="w3-xlarge">Voir mes robots</p></a>
+		<a class="w3-bar-item w3-button w3-hover-indigo w3-padding-large" href="../../accueil/accueil_prof1.html"><i class="fa fa-home w3-xxxlarge"></i></a>
+		<a class="w3-bar-item w3-button w3-hover-indigo w3-padding-large" href="../../tutoriel/tutoriel.html"><p class="w3-xlarge">Tutoriel</p></a>
+		<a class="w3-bar-item w3-button w3-hover-indigo w3-padding-large" href="../solo/solo.html"><p class="w3-xlarge">Solo</p></a>
+		<a class="w3-bar-item w3-button w3-hover-indigo w3-padding-large" href="../un_robot/un_robot.html"><p class="w3-xlarge">Avec robot</p></a>
+		<a class="w3-bar-item w3-button w3-hover-indigo w3-padding-large" href="../plusieurs_robots/plusieurs_robots.html"><p class="w3-xlarge">Plusieurs robots</p></a>
+		<a class="w3-bar-item w3-button w3-hover-indigo w3-indigo w3-padding-large" href="robots_intelligents.html"><p class="w3-xlarge">Robots intelligents</p></a>
+		<a class="w3-bar-item w3-button w3-hover-indigo w3-padding-large" href="../voir_mes_robots/mes_robots.html"><p class="w3-xlarge">Voir mes robots</p></a>
 	</nav>
 
 	<div class="w3-top w3-hide-large w3-hide-medium ">
 		<div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-			<a class="w3-bar-item w3-button" style="width:25% !important" href="../../accueil/accueil_prof1.html"><i class="fa fa-home w3-xxxlarge"></i></a>
-			<a class="w3-bar-item w3-button" style="width:25% !important" href="../../tutoriel/tutoriel.html"><p>Tutoriel</p></a>
-			<a class="w3-bar-item w3-button" style="width:25% !important" href="../solo/solo.html"><p>Solo</p></a>
-			<a class="w3-bar-item w3-button" style="width:25% !important" href="../un_robot/un_robot.html"><p>Avec robot</p></a>
-			<a class="w3-bar-item w3-button" style="width:25% !important" href="../plusieurs_robots/plusieurs_robots.html"><p>Plusieurs robots</p></a>
-			<a class="w3-bar-item w3-button" style="width:25% !important" href="robots_intelligents.html"><p>Robots intelligents</p></a>
-			<a class="w3-bar-item w3-button" style="width:25% !important" href="../voir_mes_robots/mes_robots.html"><p>Voir mes robots</p></a>
+			<a class="w3-bar-item w3-button w3-hover-indigo" style="width:25% !important" href="../../accueil/accueil_prof1.html"><i class="fa fa-home w3-xxxlarge"></i></a>
+			<a class="w3-bar-item w3-button w3-hover-indigo" style="width:25% !important" href="../../tutoriel/tutoriel.html"><p>Tutoriel</p></a>
+			<a class="w3-bar-item w3-button w3-hover-indigo" style="width:25% !important" href="../solo/solo.html"><p>Solo</p></a>
+			<a class="w3-bar-item w3-button w3-hover-indigo" style="width:25% !important" href="../un_robot/un_robot.html"><p>Avec robot</p></a>
+			<a class="w3-bar-item w3-button w3-hover-indigo" style="width:25% !important" href="../plusieurs_robots/plusieurs_robots.html"><p>Plusieurs robots</p></a>
+			<a class="w3-bar-item w3-button w3-hover-indigo w3-indigo" style="width:25% !important" href="robots_intelligents.html"><p>Robots intelligents</p></a>
+			<a class="w3-bar-item w3-button w3-hover-indigo" style="width:25% !important" href="../voir_mes_robots/mes_robots.html"><p>Voir mes robots</p></a>
 		</div>
 	</div>
 
@@ -59,7 +66,15 @@
             <p class="w3-large">Tu peux maintenant regarder les nombre <br>
                 de pions dans tes robots !</p>
             <div class="w3-panel w3-col l9"></div>
-			<button type="button" class="w3-margin w3-col l2 w3-large" onclick="window.location.href='../voir_mes_robots/mes_robots.html'"><i class="fa fa-arrow-right">Voir mes robots</i></button>
+			
+		</div>
+		<div class="w3-row w3-center">
+			<button type="button" class="w3-button w3-large w3-indigo w3-margin" 
+			onclick="window.location.href='robots_intelligents'">Rejouer</button>
+
+			<button type="button" class="w3-margin w3-large w3-button w3-yellow" 
+			onclick="window.location.href='../voir_mes_robots/mes_robots.html'">
+			<i class="fa fa-arrow-right"></i>Voir mes robots</button>
 		</div>
 	</div>
 
