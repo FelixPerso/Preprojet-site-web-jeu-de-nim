@@ -22,20 +22,27 @@
 </head>
 <body style="background-color:#d0c4f4;">
 
-	<div class="w3-display-topmiddle w3-container w3-center">
+	<!-- Titre -->
+	<div class="w3-display-topmiddle w3-container w3-center w3-hide-small">
 		<h2 style="font-family:'Bangers', cursive;font-size: 5rem; font-weight: extra bold;color:#0625a0">Jeu de Nim
 		</h2>
 	</div>
+	<div class="w3-display-topmiddle w3-container w3-center w3-hide-large w3-hide-medium">
+		<h2 style="font-family:'Bangers', cursive;font-size: 3rem; font-weight: extra bold;color:#0625a0">Jeu de Nim
+		</h2>
+	</div>
+
+	<!-- Boutons accessibilité et réinitialiser -->
 	<div class="w3-right w3-hide-small">
 		<button type="button" class="w3-col l6 m6" onclick="window.location.href='../../accessibilite.html'"><img src="../../img/logo_accessibilite.png" alt="Mode daltonien" width="80" height="80"></button>
 		<button type="button" class="w3-col l6 m6 w3-xlarge" onclick="window.location.href='../../index.html'">Réinitialiser le jeu</button>
 	</div>
-	
 	<div class="w3-bottom w3-hide-medium w3-hide-large">
 		<button type="button" class="w3-right w3-col s2 w3-small" onclick="window.location.href='../../index.html'">Réinitialiser le jeu</button>
 		<button type="button" class="w3-right w3-col s2" onclick="window.location.href='../../accessibilite.html'"><img src="../../img/logo_accessibilite.png" alt="Mode daltonien" width="40" height="40"></button>
 	</div>
 	
+	<!-- Menu -->
 	<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-black">
 		<a class="w3-bar-item w3-button w3-hover-indigo w3-padding-large" href="../../accueil/accueil_eleve2.html"><i class="fa fa-home w3-xxxlarge"></i></a>
 		<a class="w3-bar-item w3-button w3-hover-indigo w3-padding-large" href="../../tutoriel/tutoriel.html"><p class="w3-xlarge">Tutoriel</p></a>
@@ -45,7 +52,6 @@
 		<a class="w3-bar-item w3-button w3-hover-indigo w3-padding-large w3-disabled"><p class="w3-xlarge">Robots intelligents</p></a>
 		<a class="w3-bar-item w3-button w3-hover-indigo w3-padding-large w3-disabled"><p class="w3-xlarge">Voir mes robots</p></a>
 	</nav>
-
 	<div class="w3-top w3-hide-large w3-hide-medium">
 		<div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
 			<a class="w3-bar-item w3-button w3-hover-indigo" style="width:25% !important" href="../../accueil/accueil_eleve2.html"><i class="fa fa-home w3-xxxlarge"></i></a>
@@ -57,21 +63,33 @@
 			<a class="w3-bar-item w3-button w3-hover-indigo w3-disabled" style="width:25% !important"><p>Voir mes robots</p></a>
 		</div>
 	</div>
-	<div class="w3-hide-large w3-container w3-padding-64"></div>
 	
+	<!-- Contenu -->
 	<div class="w3-col w3-container l7 w3-display-middle">
-		<div class="w3-row w3-xlarge">
+		<div class="w3-container w3-padding-64"></div>
+		<div class="w3-row w3-xlarge w3-hide-small">
 			<h1>Explications :</h1>
         	<p>Voici Samy ! Samy est un robot qui va t'aider à jouer.<br>
 			Dans ce mode, Samy décide à ta place combien il veut prendre<br>
 			de pommes et tu dois juste prendre les pommes à sa place.</p>
 		</div>
-        <div class="w3-row w3-center">
-			<img src="../../img/robot.png" alt="Robot" class="w3-margin-top" width="220"><br>
-			<p class="w3-large"><b>Samy</b></p>
-			<div class="w3-panel w3-col l10"></div>
-			<button type="button" class="w3-margin w3-col l1" onclick="window.location.href='un_robot1.html'"><i class="fa fa-arrow-right">suivant</i></button>
+		<div class="w3-row w3-hide-large w3-hide-medium">
+			<h1>Explications :</h1>
+        	<p>Voici Samy ! Samy est un robot qui va t'aider à jouer.<br>
+			Dans ce mode, Samy décide à ta place combien il veut prendre<br>
+			de pommes et tu dois juste prendre les pommes à sa place.</p>
 		</div>
+        <div class="w3-row w3-center w3-hide-small">
+				<img src="../../img/robot.png" alt="Robot" class="w3-margin-top" style="width:40%;"><br>
+				<p class="w3-large"><b>Samy</b></p>
+			<div class="w3-panel w3-col l9 m7"></div>
+			<button type="button" class="w3-margin w3-col l2 m4 w3-large" onclick="window.location.href='un_robot1.html'"><i class="fa fa-arrow-right">Suivant</i></button>
+		</div>
+		<div class="w3-left w3-hide-large w3-hide-medium">
+			<img src="../../img/robot.png" alt="Robot" style="width:45%;"><br>
+			<p class="w3-large w3-margin-left"><b>Samy</b></p>
+		</div>
+		<button type="button" class="w3-row s4 w3-margin w3-large w3-hide-large w3-hide-medium" onclick="window.location.href='un_robot1.html'"><i class="fa fa-arrow-right">Suivant</i></button>
 	</div>
 	
 	
